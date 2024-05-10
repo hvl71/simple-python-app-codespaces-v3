@@ -1,6 +1,10 @@
 # Use an official Python runtime as a parent image
 FROM python:3.10-slim
 
+LABEL org.opencontainers.image.source=https://github.com/hvl71/simple-python-app-codespaces-v3
+LABEL org.opencontainers.image.description="Simple python app built via Github Action and signed via cosign"
+LABEL org.opencontainers.image.licenses=MIT
+
 # Set the working directory in the container
 WORKDIR /app
 
